@@ -27,23 +27,30 @@ const FullNameForm = ()=> {
 
     return (
         <div className="fullname-form">
-            <h2>Enter Your Full Name</h2>
+            <h2>Full Name Display</h2>
             <form onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="first-name">First Name: </label>
                 <input 
                     type="text"
                     placeholder='First Name'
                     value={firstName}
                     onChange={handleFirstNameChange}
                 />
+                </div>
+                
+                <div>
+                <label htmlFor="last-name">Last Name: </label>
                 <input
                     type='text'
                     placeholder='Last Name'
                     value={lastName}
                     onChange={handleLastNameChange}
                 />
-                <button type='submit' disabled={!isFormValid}>Submit</button>
+                </div>
+                <button type='submit' >Submit</button>
             </form>
-            {fullName && <p>Your Full Name is: {fullName}</p>}
+            {fullName && <p>Full Name: {fullName}</p>}
         </div>
     )
 }
