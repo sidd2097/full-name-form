@@ -1,0 +1,20 @@
+.fullname-form {
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
